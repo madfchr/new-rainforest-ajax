@@ -18,13 +18,13 @@
 <% end %>
 
 <% if @product.errors.any? %>
-<div id="error_explanation">
-  <h2><% pluralize(@product.errors.count, "error") %> Uh oh, looks like something went wrong:</h2>
+  <div id="error_explanation">
+    <h2><% pluralize(@product.errors.count, "error") %> Uh oh, looks like something went wrong:</h2>
 
-  <ul>
-    <% @product.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-    <% end %>
-  </ul>
-</div>
+    <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
